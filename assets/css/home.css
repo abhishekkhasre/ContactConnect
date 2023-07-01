@@ -1,0 +1,115 @@
+body{
+    padding: 0px;
+    /* margin: 0px; */
+    
+}
+
+.Header{
+    height: 40px;
+    width: 96%;
+    padding : 30px;
+    background-color: #88EC82;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.Logo{
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+}
+
+.credentials{
+    float: right;
+}
+
+.search-container{
+    margin: auto;
+    width: 100px;
+    margin-top:30px ;
+}
+
+
+
+  
+  p {
+    position: relative;
+    top: 30px;
+  }
+  
+  p a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .credentials button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    /* box-shadow: 0 0 20px #000000; */
+    transition: 0.4s;
+  }
+  
+  .reg {
+    color: white;
+    background-color: #000000;
+  }
+  
+  .log {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #000000;
+  }
+  
+  .credentials button:hover {
+    color: white;
+    box-shadow: 0 0 20px #000000;
+    background-color: #000000;
+  }
+  
+  
+  .height{
+
+    height: 100vh;
+}
+
+.search-container{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width:600px;
+    margin-top:30px ;
+    align-items: center;
+    border:2px solid #88EC82;
+}
+
+
+.ContactListdiv{
+    width: fit-content;
+    height: auto;
+    border: 2px solid #000000;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+span button{
+  height: 20px;
+  width: auto;
+}
+
+.eachcontact{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 2px dotted black;
+  width: fit-content;
+}
+

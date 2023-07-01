@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactList || Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    
+</head>
+<body>
+
+    <div class="Header">
+
+        <div class="Logo">
+            <h1>Global Contact's</h1>
+        </div>
+
+        
+        <div class="credentials">
+
+            <a href="/yourcontact"><button class="log">YourContact</button> </a>
+            <a href="/logout"><button class="reg">LogOut</button></a>
+
+        </div>
+
+    </div>
+
+    <div class="search-container">
+
+        <form action="/SearchByName" method="post">
+            <input type="text" name="name" required>
+            <input type="submit" value="Search By Name">
+        </form>
+
+        <form action="/SearchByNumber" method="post">
+            <input type="text" name="number" required>
+            <input type="submit" value="Search By Number">
+        </form>
+        
+    </div>
+
+    
+    <div class="ContactListdiv">
+        <% if(contacts) { %> 
+            <% for (c of contacts) { %> 
+                <div class="eachcontact">
+                <span><b>Name: &nbsp; </b><%=c.name %> &nbsp;&nbsp; </span> 
+                <span><b>Number: &nbsp;</b> </h4><%= c.number %>&nbsp;&nbsp; </span> 
+                <span><b>Spam Count: &nbsp;</b> </h4><%= c.spam %>&nbsp;&nbsp; </span> 
+                <span><b>Status: &nbsp;</b> </h4><% if(c.status){%>Verified <%}else{%> Not Verified <%} %>&nbsp;&nbsp; </span>
+                <span><a href="/addtoyourcontact/<%=c.id%>"><button >Add to your Contact</button></a></span>
+                <br>
+                </div>
+            <% } %>
+        <% } %>
+
+    </div>
+
+    
+</body>
+</html>
